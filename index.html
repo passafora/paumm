@@ -4,21 +4,69 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
   <title>La pàgina web de Pau Mariné</title>
-  <link rel="icon"href="/img/pmm.ico"type="image/x-icon"/><link rel="shortcut icon"href="/img/pmm.ico"type="image/x-icon"/>
+  <link rel="icon"href="/img/wik10.ico"type="image/x-icon"/><link rel="shortcut icon"href="/img/wik10.ico"type="image/x-icon"/>
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2575.6">
   <style type="text/css">
-    body{padding:0;margin:0;}
+    body{padding:0;margin:0;background-image: url('img/flock.png');}
     img {padding:0;margin:0}
     div img {width:25%;padding:0;margin:0;float:left;}
     div video {width:50%;padding:0;margin:0;float:left;}
     p{padding:10px;margin:0;}
     ul{margin-top:0;}
+    mark{background-color: #fdf1ff;  margin: 0 -0.4em;padding: 0.1em 0.4em;border-radius: 0.8em 0.3em;}
     span{text-decoration: none;color:black;}
+    #especial{width:9em;position:absolute;z-index:-1;right:0.5em;top:0.5em;}
+    #ofh{overflow: hidden;border:2px solid red;}
+    @-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 10s linear infinite;
+  -moz-animation: rotating 10s linear infinite;
+  -ms-animation: rotating 10s linear infinite;
+  -o-animation: rotating 10s linear infinite;
+  animation: rotating 10s linear infinite;
+}
   </style>
 </head>
 <body>
-<p>Hello world! <img src="img/ma.gif"> I'm <b>Pau Mariné</b>, a Blender animator from Barcelona.</p><ul><li>I like plants and bicycles.</li><li><a href="https://youtu.be/6IAr-gIJR3w">Here</a> you can find my reel.</li><li>You can contact me at <a href="mailto:passafora@gmail.com">passafora gmail com</a><ul><li><a href="https://www.instagram.com/pau_marine/">ig</a></li><li><a href="https://www.linkedin.com/in/paumm">in</a></li></ul></li></ul>
+  
+<p><mark>Hello world! <img src="img/ma.gif"> I'm <b>Pau Mariné</b>, a Blender animator from Barcelona.</mark></p>
+<ul>
+  <li><mark>I like plants and bicycles.</mark></li>
+  <li><mark><a href="https://youtu.be/6IAr-gIJR3w">Here</a> you can find my reel.</mark></li>
+  <li><mark>You can contact me at <a href="mailto:passafora@gmail.com">passafora gmail com</a></mark>
+    <ul>
+      <li><mark><a href="https://www.instagram.com/pau_marine/">ig</a></mark></li>
+      <li><mark><a href="https://www.linkedin.com/in/paumm">in</a></mark></li>
+    </ul></li>
+  </ul>
 <div>
 <video src="mp4/thundercats.mp4" autoplay loop muted></video>
 <video src="mp4/hater.mp4" autoplay loop muted></video>
@@ -36,6 +84,7 @@
 <img src="img/granota.jpg">
 <img src="img/calsotet.jpg">
 <img src="img/tio.jpg">
+<div class="ofh" style="overflow: hidden;"><img src="img/jo.png" id="especial" class="rotating"></div>
 </div>
 </body>
 </html>
