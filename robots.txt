@@ -1,3 +1,2 @@
 User-agent: *
 Disallow: /
-# Code from Robotstxt.org
