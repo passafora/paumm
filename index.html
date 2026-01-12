@@ -43,8 +43,8 @@ Gràcies per llegir el meu arxiu HTML!-->
     span{text-decoration: none;color:black;}
     #especial{width:7.5em; position:absolute; z-index:-1; right:0.5em; top:0.5em; border-radius:50%; border:0.5em solid white;}
     #text{display:block;padding:2em;width:auto;background-image:linear-gradient(rgba(0,255,255,0), rgba(0,255,255,0), rgba(0,255,255,0.5));}
-    img#reel{display:block;margin:auto;width:70%;border-radius:1em;border-width:2px;border-color:white;border-style:solid;min-width:300px;max-width:1000px;}
-    img:hover#reel{border-color:blue;}
+    img.reel{display:block;margin:auto;width:70%;border-radius:1em;border-width:2px;border-color:white;border-style:solid;min-width:300px;max-width:1000px;}
+    img:hover.reel{border-color:blue;}
     .rotating {-webkit-animation:rotating 10s linear infinite; -moz-animation:rotating 10s linear infinite; -ms-animation:rotating 10s linear infinite; -o-animation:rotating 10s linear infinite; animation: rotating 10s linear infinite;}
     @-webkit-keyframes rotating /* Safari and Chrome */ {
       from {-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
@@ -53,6 +53,22 @@ Gràcies per llegir el meu arxiu HTML!-->
     @keyframes rotating {
       from {-ms-transform: rotate(0deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
       to {-ms-transform: rotate(360deg); -moz-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg);}
+    }
+    @media (max-width: 900px){
+    	#text{padding:1.5em;}
+    	img.reel{margin:0;width:100%}
+    	#especial{position:initial;z-index:1;margin-left: 35%;width: 25%;margin-top: 1em;border-width:0.4em;}
+    	body{font-size:1.3em;}
+    }
+    @media (max-width: 600px){
+    	#text{padding:1em;}
+    	#especial{position:initial;z-index:1;margin-left:30%;width:30%;margin-top: 1em;border-width:0.4em;}
+    	body{font-size:1.1em;}
+    }
+    @media (max-width: 400px){
+    	#text{padding:0.5em;}
+    	#especial{position:initial;z-index:1;margin-left:25%;width:40%;margin-top: 1em;border-width:0.4em;}
+    	body{font-size:1.1em;}
     }
   </style>
 </head>
@@ -68,7 +84,8 @@ Gràcies per llegir el meu arxiu HTML!-->
       <li><mark><a href="https://www.instagram.com/pau_marine/">Instagram</a></mark></li>
     </ul></li>
   </ul>
-  <a href="https://www.youtube.com/watch?v=5Kzo5bZeYUA" title="Animation Reel @ Youtube"><img id="reel" src="img/reel.jpg"></a>
+  <a href="https://www.youtube.com/watch?v=5Kzo5bZeYUA" title="Animation Reel @ Youtube"><img class="reel" src="img/reel.jpg"></a>
+  <img src="https://paumm.xyz/img/jo.png" id="especial" class="rotating">
 </div>
 <div id="imatges">
   <video src="mp4/thundercats.mp4" autoplay loop muted></video>
@@ -94,7 +111,6 @@ Gràcies per llegir el meu arxiu HTML!-->
   <video src="mp4/sparrow.mp4" autoplay loop muted style="width:25%;" title="Original drawing by Joe Sparrow"></video>
   <img src="img/tio.jpg">
 </div>
-  <img src="https://paumm.xyz/img/jo.png" id="especial" class="rotating">
 </body>
 </html>
 <!--⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
